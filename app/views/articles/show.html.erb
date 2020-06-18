@@ -1,4 +1,4 @@
-<h1>This is the article you have just created</h2>
+<h1>Showing selectd article</h2>
 
 <p>
   Title: <%= @article.title %>
@@ -7,3 +7,8 @@
 <p>
   Description: <%= @article.description %>
 </p>
+
+
+  <%= link_to("Edit this article", edit_article_path)%> | 
+
+  <%= link_to("Back to all articles", articles_path) %>
