@@ -1,0 +1,59 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+  background-color: #26B6EC !important;
+  margin-bottom: 25px;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #ADDBE6;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("Blogging Tips LinkedIn Post Header.png");
+  background-size: cover;
+  height: 550px;
+  // margin-top: 20px;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
