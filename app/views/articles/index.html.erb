@@ -4,7 +4,7 @@
 <div class="card bg-light w-75 offset-2">
   <div class="card-body">
   <h5 class="card-title"><%= article.title %></h5>
-      <p class="card-text"><%=h truncate(article.description, :length => 80) %></p>
+      <p class="card-text"><%=h truncate(article.description, :length => 120) %></p>
       <%= link_to("Show this article", article_path(article), class: "btn btn-sm btn-primary") %>
   </div>
 </div>
