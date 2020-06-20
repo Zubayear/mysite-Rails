@@ -5,7 +5,7 @@
   <div class="card-body">
   <h5 class="card-title"><%= article.title %></h5>
       <p class="card-text"><%=h truncate(article.description, :length => 80) %></p>
-      <%= link_to("Show this article", show_article_path(article), class: "btn btn-sm btn-primary") %>
+      <%= link_to("Show this article", articles_path(article), class: "btn btn-sm btn-primary") %>
   </div>
 </div>
 <br />
