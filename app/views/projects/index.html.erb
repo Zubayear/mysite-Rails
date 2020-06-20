@@ -1,0 +1,12 @@
+<h1 align="center">Listing all projects</h1>
+
+<% @projects.each do |project| %>
+<div class="card bg-light w-75 offset-2">
+  <div class="card-body">
+  <h5 class="card-title"><%= project.title %></h5>
+      <p class="card-text"><%=h truncate(project.description, :length => 120) %></p>
+      <%= link_to("Show this project", project_path(project), class: "btn btn-sm btn-primary") %>
+  </div>
+</div>
+<br />
+<% end %>
