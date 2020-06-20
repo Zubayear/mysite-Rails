@@ -3,7 +3,7 @@
 <% @projects.each do |project| %>
 <div class="card bg-light w-75 offset-2">
   <div class="card-body">
-  <h5 class="card-title"><%= project.title %></h5>
+  <h5 class="card-title"><%= link_to(project.title, project.proj_link) %></h5>
       <p class="card-text"><%=h truncate(project.description, :length => 120) %></p>
       <%= link_to("Show this project", project_path(project), class: "btn btn-sm btn-primary") %>
   </div>
