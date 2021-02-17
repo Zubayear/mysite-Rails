@@ -1,17 +1,13 @@
-<div class="container">
-  <footer class"footer">
-    <small>
-      Copyright &copy; <%= link_to "Developed with Rails", root_path %>
-      by <%= link_to "Zubayear", root_path %>
-    </small>
-    <nav>
-      <ul>
-        <li><%= link_to("About", welcome_about_path) %></li>
-        <li><%= link_to("Projects", projects_path) %></li>
-        <li><%= link_to("Github", "https://github.com/Zubayear", target: :_blank) %></li>
-        <li><%= link_to("LinkedIn", "https://www.linkedin.com/in/zubayear/", target: :_blank) %></li>
-        <li><%= mail_to("syedjubaer997@gmail.com", "Contact") %></li>
-      </ul>
-    </nav>
-  </footer>
-</div>
+<footer class="text-muted py-5">
+  <div class="container">
+  <ul class="bd-footer-links ps-0 mb-3">
+    <li><%= link_to "About", welcome_about_path, class: "d-inline-block" %></li>
+    <li><%= link_to "Github", "https://github.com/Zubayear", target: :_blank, class: "d-inline-block ms-3"%></li>
+    <li><%= link_to "LinkedIn", "https://www.linkedin.com/in/zubayear/", target: :_blank, class: "d-inline-block ms-3" %></li>
+    
+    <li><%= mail_to "syedjubaer997@gmail.com", "Contact", class: "d-inline-block ms-3" %></li>
+  </ul>
+    <p class="mb-1">This site is &copy; Zubayear</p>
+    <p class="mb-0"><%= link_to "Developed with Ruby on Rails", root_path %> by <%= link_to "Zubayear", root_path%> 
+  </div>
+</footer>
